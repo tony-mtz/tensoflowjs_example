@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classifying images using a pretrained model in TensorFlow.js</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+    <h2> Tensorflow </h2>
+    <p id="status">...waiting for TF</p>
+    <h2>Classifying images using a pretrained model in TensorFlow.js</h2>
+    
+    <section id="demos" class="invisible">
+
+      <div class="classifyOnClick">
+        <img src="./images/archjill.jpg" width="300px" Click to get classification!" />
+        <h3 id='results'>Model prediction: click the image!</h3>      
+      </div>
+      <div class="classifyOnClick">
+        <img src="./images/cat_arm.jpg" width="300px" title="Click to get classification!" />
+        <h3>Model prediction: click the image!</h3>       
+      </div>
+      <div class="classifyOnClick">
+        <img src="./images/dogtv.png" width="300px" title="Click to get classification!" />
+        <h3>Model prediction: click the image!</h3>       
+      </div>
+    </section>
+    
+    <!-- Import TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js" type="text/javascript"></script>
+    
+    <!-- Import pre-trained MobileNet model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.0.4"></script>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
