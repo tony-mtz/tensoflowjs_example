@@ -19,10 +19,6 @@ section {
   transition: opacity 500ms ease-in-out;
 }
 
-header, footer {
-  clear: both;
-}
-
 .removed {
   display: none;
 }
@@ -34,27 +30,4 @@ header, footer {
 .note {
   font-style: italic;
   font-size: 130%;
-}
-
-.webcam, .classifyOnClick {
-  position: relative;
-  float: left;
-  width: 48%;
-  margin: 2% 1%;
-  cursor: pointer;
-}
-
-.webcam p, .classifyOnClick p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 5px;
-  background-color: #FF6F00;
-  color: #FFF;
-  border: 1px dashed rgba(255, 255, 255, 0.7);
-  margin: 0 0 10px 0;
-}
-
-.classifyOnClick {
-  z-index: 0;
 }

@@ -7,7 +7,7 @@ const demosSection = document.getElementById('demos');
 let modelHasLoaded = false;
 let model = undefined;
 
-// Before we can use MobileNet we must wait for it to finish loading. 
+// Before we can use SSD we must wait for it to finish loading. 
 cocoSsd.load()
 .then((loadedModel) => {
   model = loadedModel;
